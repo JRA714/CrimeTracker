@@ -6,7 +6,11 @@ import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 
-public class CrimeActivity extends SingleFragmentActivity {
+public abstract class CrimeActivity extends SingleFragmentActivity {
 
-    return new CrimeFragment();
+    @Override
+    protected  Fragment createFragment() {
+        return new CrimeFragment();
+    }
+
 }
